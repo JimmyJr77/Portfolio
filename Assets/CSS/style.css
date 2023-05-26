@@ -1,0 +1,290 @@
+:root {
+    --darkred:rgb(184, 31, 0);
+    --bioblue:rgb(65, 147, 255);
+    --headerfonts: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body-index {
+    background-color: rgb(51, 3, 3);
+}
+
+.container {
+    position: relative;
+    height:100vh;
+    width:100%;
+  }
+  
+.image-it {
+    display: block;
+    position: absolute;
+    top:0px;
+    width: 100vw;
+    height: auto;
+    max-height:700px;
+    margin-top:8px;
+    transition: opacity 4s ease-in-out;
+}
+  
+.image-not-scary {
+    display: block;
+    width: 100vw;
+    height: auto;
+    max-height:700px;
+  }
+  
+.image-it.top:hover {
+    opacity: 0;
+}
+
+#header-button {
+    display:flex;
+    background-color:var(--darkred);
+    height:3.5vw;
+    width:100vw;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4vw;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+    border:2px solid orangered;
+    text-decoration: none;
+}
+
+#header-welcome {
+    display:flex;
+    background-color:var(--bioblue);
+    height:4vw;
+    width:100vw;
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.5vw;
+    align-items: center;
+    justify-content: center;
+    border:2px solid var(--bioblue);
+    text-decoration: none;
+}
+
+#portfolio-sort {
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    font-weight: bold;
+    justify-content: space-between;
+    padding:0 50px;
+    margin-top:40px;
+    margin-bottom:40px;
+    text-decoration: none;
+    color:black;
+}
+
+.portfolio-selector {
+    cursor:pointer;
+    text-decoration: none;
+    color:black;
+}
+
+.portfolio-selector:hover {
+    color:var(--bioblue);
+}
+
+.portfolio-selector:active {
+    color:blue;
+}
+
+.portfolio-selector:focus {
+    color:var(--bioblue);
+    text-decoration:underline;
+}
+
+#header-button:hover {
+    background-color: orangered;
+}
+
+#header-button:active {
+    background-color: orangered;
+    font-size:4.5vw;
+}
+
+#header-button:focus {
+    border:2px solid orangered;
+}
+
+.portfolio-sections {
+    display:flex;
+    height: 75vh;
+    width:100vw;
+    position: relative;
+}
+
+.portfolio-header-left {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--headerfonts);
+    font-size: 2vw;
+    color:var(--bioblue);
+    writing-mode:vertical-lr;
+    transform:rotate(180deg);
+    border-left:4px solid var(--bioblue);
+}
+
+.portfolio-text {
+    display:flex;
+    flex-grow: 1;
+    font-family: var(--headerfonts);
+    font-size: 3vw;
+    margin-left:40px;
+    margin-right:30%;
+    justify-content:center;
+    align-items:center;
+    position: relative;
+}
+
+.about-me-img {
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:auto;
+    height:100%;
+    opacity:0.3;
+}
+
+#name {
+    position:absolute;
+    
+    font-weight:bold;
+    color:green;
+
+}
+
+.portfolio-header-top {
+    display:block;
+    width:100vw;
+    text-align: center;
+    font-family: var(--headerfonts);
+    font-size: 2vw;
+    color:var(--bioblue);
+    border-top:4px solid var(--bioblue);
+    border-bottom:4px solid var(--bioblue);
+
+}
+
+#cloud-profile-page {
+    position:absolute;
+    height:30vh;
+    width:auto;
+    top: 10%;
+    left: 5%;
+}
+
+#cloud-cheat-sheet {
+    position:absolute;
+    height:20vh;
+    width:auto;
+    top: 35%;
+    right: 20%;
+}
+
+#cloud-sexy-site {
+    position:absolute;
+    height:20vh;
+    width:auto;
+    bottom: 17%;
+    right: 3%;
+}
+
+#cloud-fancy-site {
+    position:absolute;
+    height:20vh;
+    width:auto;
+    bottom: 2%;
+    left: 14%;
+}
+
+#boy-balloons {
+    position:absolute;
+    height:30vh;
+    width:auto;
+    top: 50%;
+    right: 18%;
+}
+
+.portfolio-header-right {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--headerfonts);
+    font-size: 2vw;
+    color:var(--bioblue);
+    writing-mode:vertical-lr;
+    border-left:4px solid var(--bioblue);
+}
+
+.portfolio-text-connect {
+    flex-grow: 1;
+    font-family: var(--headerfonts);
+    font-size: 3vw;
+    margin-left:40px;
+    position: relative;
+}
+
+ul li {
+    display:flex;
+}
+
+footer {
+    position:relative;
+    color:black;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:x-small;
+}
+
+@media screen and (max-width:600px) {
+
+    #cloud-profile-page {
+        position:absolute;
+        height:20vh;
+        width:auto;
+        top: 10%;
+        right: 5%;
+    }
+    
+    #cloud-cheat-sheet {
+        position:absolute;
+        height:20vh;
+        width:auto;
+        top: 30%;
+        right: 5%;
+    }
+    
+    #cloud-sexy-site {
+        position:absolute;
+        height:20vh;
+        width:auto;
+        bottom: 20%;
+        right: 5%;
+    }
+    
+    #cloud-fancy-site {
+        position:absolute;
+        height:20vh;
+        width:auto;
+        bottom: 2%;
+        right: 5%;
+    }
+
+ .portfolio-text {
+        display:flex;
+        flex-grow: 1;
+        font-family: var(--headerfonts);
+        font-size: 3vw;
+        margin-left:40px;
+        margin-right:30%;
+        justify-content:center;
+        align-items:center;
+        position: relative;
+        font-weight:bold;
+    }
+}
