@@ -103,7 +103,6 @@ body-index {
 
 #header-button:active {
     background-color: orangered;
-    font-size:4.5vw;
 }
 
 #header-button:focus {
@@ -194,7 +193,7 @@ body-index {
     right: 3%;
 }
 
-#cloud-fancy-site {
+#cloud-libel-news {
     position:absolute;
     height:20vh;
     width:auto;
